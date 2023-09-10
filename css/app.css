@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+#play_game_btn {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 20px 44px;
+    border-radius: 10px;
+    color: #476E8C;
+    background-color: #E7CE51;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(60%, 220%);
+    transition: .4s;
+    animation: zoomout 3s linear infinite;
+}
+#play_game_btn:hover{
+    color: #fff;
+}
+#side_img {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 130%;
+    transform: translate(-50%, -50%);
+}
+#banner_img{
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    animation: zoom 20s linear infinite;
+    transition: .4s;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+/* common css end */
+.hadding{
+    color: #222;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main {
+    width: 50%;
+    position: relative;
+    height: 100vh;
+}
+#game_box{
+    display: none;
+    justify-content: space-between;
+}
+.player_box  p{
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #476E8C;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.player_box {
+    width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #E7CE51;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+input{
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: 900;
+}
+.submit_btn {
+    color: #fff;
+    font-weight: 800;
+    background-color: #476E8C;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    padding: 10px 24px;
+    border-radius: 10px;
+}
+/* #player_one{
+    
+} */
+#player_two{
+    display: none;
+}
+#submit_btn_two{
+    display: none;
+}
+@keyframes zoom {
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+@keyframes zoomout {
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gass number</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <div class="container">
+        <div id="main_page">
+            <img src="./image/main_img.png" alt="#" id="banner_img">
+            <button id="play_game_btn" onclick="startGame()">Play now</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="hadding"></h1>
+        <div id="game_box" class="main">
+            <div id="player_one" class="player_box">
+            <h2>player one</h2>
+            <p>Enter the number between 1 and 10</p>
+            <input id="input_one" type="text" placeholder="Enter your number">
+            </div>
+            <div id="player_two" class="player_box">
+            <h2>player two</h2>
+            <p>Guess the number between 1 and 10</p>
+            <input id="input_two" type="text" placeholder="Gues the number">
+            </div>
+            <button id="submit_btn_one" class="submit_btn" >Enter</button>
+            <button id="submit_btn_two" class="submit_btn" >submit</button>
+            <img id="side_img" src="./image/side_img.png" alt="#">
+        </div>
+    </div>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
